@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head class="pic">
+    <meta charset="UTF-8">
+    <title>Teacher Login</title>
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+    integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+    crossorigin="anonymous">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css">
+</head>
+<body class="pic3">
+<center>
+    <h1 class="white header pic3">Hello Teacher!</h1>
+    <div class="hero">
+    <form action="/login/teacher_login/" method="POST">{% csrf_token %}
+        <div class="gallery"><br>
+            Login ID :<input name="LoginID" type="number"/><br><br>
+            Password:<input name="Password" type="password"/><br><br>
+            <button class="btn btn-primary outline" type="submit" name="Login">Login</button>
+        </div>
+    </form>
+    </div>
+    <h6 class="white">&copy</h6>;
+    <a href="https://www.facebook.com/prudhvi.potnuru.7" class="btn btn-lg btn-primary outline fb" target="_blank" id="facebook">Facebook</a>
+    <a href="https://www.instagram.com/prudhvipotnuru/" class="btn btn-lg btn-warning outline insta" target="_blank" id="instagram">Instagram</a>
+    <a href="https://www.youtube.com/watch?v=eAZS41vMSjI&list=PLw02n0FEB3E3VSHjyYMcFadtQORvl1Ssj&t=106" class="btn btn-lg btn-danger outline youtube" target="_blank" id="youtube">Youtube</a>
+</center>
+</body>
+</html>

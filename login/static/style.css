@@ -1,0 +1,145 @@
+.pic{
+background-image: url(/static/image_at_studentupload.png);
+background-size:cover;
+}
+
+.pic1{
+background-image: url(/static/cody-trailer_gif.gif);
+background-size:cover;
+}
+
+.pic2{
+background-image: url(/static/homework_dribbble.gif);
+background-size:cover;
+}
+
+.pic3{
+background-image: url(/static/Coding.gif);
+background-size:cover;
+}
+
+.pic4{
+background-image: url(/static/search-engine-machine.gif);
+background-size:cover;
+}
+
+.header {
+    background-color: white;
+    color:black;
+    text-align: center;
+    font-size:70px;
+    font-weight:300
+}
+
+.header:hover{
+text-decoration:underline;
+}
+
+.download {
+background-image: url(/static/animated_save_icon.gif);
+background-size:100%;
+}
+
+.hero {
+
+	background-position: center top;
+	background-size: cover;
+	padding: 20px 0;
+	margin: 100px;
+	font-family: 'Georgia', 'serif';
+}
+
+div.gallery {
+    border: 2px solid #122334;
+    border-radius:4px;
+    float: center;
+    width: 330px;
+    height:210px;
+    color:white;
+}
+
+div.gallery:hover {
+    border: 2px solid blue;
+    border-radius:4px;
+}
+
+.btn{
+width:150px;
+color:white;
+transition: width 0.5s;
+}
+
+.btn:hover{
+background-color:white;
+color:black;
+text-decoration: underline;
+width:220px;
+}
+
+.btn1{
+width:400px;
+height:300px;
+color:black;
+font-size:30px;
+}
+
+input[type=number] {
+  width: 50px;
+  border: 2px solid blue;
+  border-radius: 4px;
+  transition: width .5s ease-in-out;
+}
+input[type=number]:focus {
+  width: 250px;
+}
+
+input[type=password] {
+  width: 50px;
+  border: 2px solid blue;
+  border-radius: 4px;
+  transition: width .5s ease-in-out;
+}
+input[type=password]:focus {
+  width: 250px;
+}
+
+input[type=text] {
+  width: 150px;
+  transition: width .35s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 250px;
+}
+
+h2.white{
+color:white;
+}
+h6.white{
+color:white;
+}
+h6.white:hover{
+color:red;
+}
+
+.insta:hover{
+color:yellow;
+}
+.fb:hover{
+color:blue;
+}
+.youtube:hover{
+color:red;
+}
+.upload{
+color:white;
+background-color:green;
+}
+.upload:hover{
+color:white;
+background-color:black;
+border : 2px solid red;
+}
+.white{
+color:white;
+}

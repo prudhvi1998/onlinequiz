@@ -1,0 +1,66 @@
+  <div class='slider'>
+    <div class='slide1'>
+      <h2 style=" font-size:80px; text-align:center; color:#fff;">Range Rover</h2>
+      <center><a class="btn btn-primary" href="catalogue.html" role="button">See all</a></center>
+    </div>
+    <div class='slide2'>
+      <h2 style=" font-size:80px; text-align:center;">Mercedes Benz</h2>
+      <center><a class="btn btn-primary" href="catalogue.html" role="button">See all</a></center>
+    </div>
+    <div class='slide3'>
+      <h2 style=" font-size:80px; text-align:center;">Land Cruiser</h2>
+      <center><a class="btn btn-primary" href="catalogue.html" role="button">See all</a></center>
+    </div>
+  </div>
+
+.slider {
+  //max-width: 300px;
+  height: 900px;
+  margin: 20px auto;
+  position: relative;
+}
+.slide1,.slide2,.slide3,.slide4,.slide5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.slide1 {
+  background: url(https://media.ed.edmunds-media.com/land-rover/range-rover/2016/oem/2016_land-rover_range-rover_4dr-suv_hse-td6_fq_oem_3_1280.jpg)no-repeat center;
+      background-size: cover;
+    animation:fade 8s infinite;
+-webkit-animation:fade 8s infinite;
+
+}
+.slide2 {
+  background: url(https://mediaserver.mbusa.com/iris/iris?client=mb&brand=mbusa&resp=err_status%2Cjpeg&quality=90&vehicle=2017_g65w4&pov=e01%2Crt&paint=2_040&sa=0_r14%2C9_pa6&width=1440&height=600&w=7200&h=3868&x=1800&y=2999)no-repeat center;
+      background-size: cover;
+    animation:fade2 8s infinite;
+-webkit-animation:fade2 8s infinite;
+}
+.slide3 {
+    background: url(http://hanabi.autoweek.com/sites/default/files/styles/gen-1200-675/public/thefjcompany_1978_fj40_skyblue_scottsdale_outdoor_08.jpg?itok=LVlIW9U0)no-repeat center;
+      background-size: cover;
+    animation:fade3 8s infinite;
+-webkit-animation:fade3 8s infinite;
+}
+@keyframes fade
+{
+  0%   {opacity:1}
+  33.333% { opacity: 0}
+  66.666% { opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fade2
+{
+  0%   {opacity:0}
+  33.333% { opacity: 1}
+  66.666% { opacity: 0 }
+  100% { opacity: 0}
+}
+@keyframes fade3
+{
+  0%   {opacity:0}
+  33.333% { opacity: 0}
+  66.666% { opacity: 1}
+  100% { opacity: 0}
+}

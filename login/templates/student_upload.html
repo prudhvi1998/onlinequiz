@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student upload</title>
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+    integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+    crossorigin="anonymous">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css">
+</head>
+<body class="pic2">
+<center>
+        <div>
+        <form action="/login/student_upload/" method="post" enctype="multipart/form-data">{% csrf_token %}
+            <h2>Click the belove link to Download</h2>
+            <a href="{% static 'media/bustopology.tcl' %}" download><button type="button" class="btn btn1 download outline"></button></a><br><br>
+            <input type="file" name="myfile"><br><br>
+            <button type="submit" class="btn outline green upload">Upload</button><br><br>
+        </form>
+        </div>
+</center>
+</body>
+</html>

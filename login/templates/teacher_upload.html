@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teacher upload</title>
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+    integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+    crossorigin="anonymous">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css">{% csrf_token %}
+</head>
+<body class="pic4">
+<center>
+     <div class="pic4">
+        <form action="/login/teacher_upload/" method="post" enctype="multipart/form-data">{% csrf_token %}
+            <h2>Choose the Answer Sheet to upload</h2><br>
+            <input type="file" name="myfile">
+            <br><br>
+            <h2>Choose the Question Paper to upload</h2><br>
+            <input type="file" name="myfile1">
+            <br><br><br>
+            <button class="btn btn-lg outline green upload" type="submit">Upload</button>
+        </form>
+        </div>
+    </center>
+</body>
+</html>
